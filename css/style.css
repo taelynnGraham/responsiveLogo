@@ -1,0 +1,35 @@
+#l1logo {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 50px;
+}
+
+/*x-small*/
+#l1banner,
+#textUofL {
+    opacity: 0;
+}
+
+#l1shield {
+    transform: scale(1.5) translate(-45px, -95px);
+}
+
+/*small*/
+@media (min-width: 600px) {
+    #l1textUofL {
+        opacity: 1;
+    }
+    #l1shield {
+        transform: scale(1) translate(0);
+    }
+    #l1shieldWhite {
+        opacity: 1;
+    }
+}
+
+/*med*/
+@media (min-width: 768px) {
+    #l1banner {
+        opacity: 1;
+    }
+}
