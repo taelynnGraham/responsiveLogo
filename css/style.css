@@ -1,5 +1,11 @@
 .row {
     margin-top:25px;
+p {
+    color: #969696;
+}
+
+svg {
+    padding-top:10px;
 }
 
 #l1logo {
@@ -9,7 +15,6 @@
 
 #l2logo, #l3logo {
     width: 100%;
-    max-width: 300px;
 }
 
 /*x-small*/
