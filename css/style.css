@@ -1,5 +1,8 @@
 .row {
-    margin-top:25px;
+    padding-bottom: 200px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
 p {
     color: #969696;
 }
@@ -8,20 +11,28 @@ svg {
     padding-top:10px;
 }
 
-#l1logo {
+.vLogo {
     width: 100%;
-    max-width: 300px;
+    min-width: 35px;
+    max-width: 150px;
 }
 
-#l2logo, #l3logo {
+.hLogo {
     width: 100%;
+    min-width:125px;
+    max-width:300px;
 }
+
+.cLogo {
+    width: 100%;
+    max-width: 250px;
+}
+
 
 /*x-small*/
-#l2banner,
-#l2textUofL, 
-#l3banner,
-#l3textUofL{
+#l2banner, #l2textUofL, 
+#l3banner, #l3textUofL,
+#l5banner, #l6banner, #l7banner {
     opacity: 0;
 }
 
@@ -29,45 +40,77 @@ svg {
     transform: scale(1.5) translate(-45px, -95px);
 }
 
-#l3shieldWhite {
+#l5shield, #l6shield {
+    transform: scale(1.2) translate(-10px, -10px);
+}
+
+#l7shield {
+    transform: scale(1.75) translate(100px, -125px);
+}
+
+#l3shieldWhite, #l6shieldWhite {
     opacity: 0;
 }
-/*
-#l3shieldBorder {
-    opacity: 0;
-}
-*/
+
+#l7textUofLVertical {
+        opacity: 0;
+    }
+#l7textUofLHorizontal {
+        opacity: 0;
+    }
 
 /*small*/
 @media (min-width: 600px) {
     #l2textUofL, #l3textUofL {
         opacity: 1;
     }
-    #l2shield, #l3shield {
+    #l2shield, #l3shield, #l5shield, #l6shield {
         transform: scale(1) translate(0);
     }
     
-    #l3shieldWhite {
+    #l3shieldWhite, #l6shieldWhite {
         opacity: 1;
+    }
+    
+    #l7textUofLHorizontal {
+        opacity: 1;
+    }
+    #l7banner, #l7shield, #l7textUofLVertical {
+        transform: translate(0);
     }
 }
 
 /*medium*/
-@media (min-width: 768px) {
-    #l2banner, #l3banner {
+@media (min-width: 769px) {
+    #l2banner, #l3banner,#l5banner ,#l6banner {
         opacity: 1;
+    }
+    
+    #l7textUofLHorizontal {
+        opacity: 0;
+    }
+    #l7textUofLVertical {
+        opacity: 1;
+    }
+    #l7banner {
+        opacity:1;
+    }
+    #l7banner, #l7shield, #l7textUofLVertical {
+        transform:scale(1.5) translate(175px, -25px);
     }
 }
 
 /*SVG STYLES*/
-svg .st0 {
-    fill: #003C77;
-}
+#verticalRow .st0 {fill: #003C77;}
+#verticalRow .st1 {fill: #FFFFFF;}
+#verticalRow .st2 {fill: #FFCF01;}
 
-svg .st1 {
-    fill: #FFFFFF;
-}
+#horizontalRow .st0 {fill: #231F20;}
+#horizontalRow .st1 {fill: #003C77;}
+#horizontalRow .st2 {fill: #FFFFFF;}
+#horizontalRow .st3 {fill: #FFCF01;}
 
-svg .st2 {
-    fill: #FFCF01;
-}
+#combinedRow .st0 {fill: #003C77;}
+#combinedRow .st1 {fill: #FFFFFF;}
+#combinedRow .st2 {fill: #231F20;}
+#combinedRow .st3 {fill: #FFCE01;}
